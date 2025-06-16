@@ -27,20 +27,11 @@ body, html, #main {
     background: white;
 }
 
-.circle {
-    flex: 1.1;
-    width: 80px;          /* Set the width of the circle */
-    height: 80px;         /* Set the height of the circle (same as width) */
-    background: #416933;  /* Choose your circle color */
-    border-radius: 50%;   /* Makes the div a circle */
-    display: inline-block;
-    position: relative;
-}
-
 .text-container {
     flex: 3;
     display: flex;
     flex-direction: column;
+    border-left: 1px solid grey;
 }
 
 .header {
@@ -81,8 +72,9 @@ body, html, #main {
 }
 
 .product img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
 
 }
 
@@ -92,11 +84,20 @@ body, html, #main {
 }
 
 .circle-pdt {
-    width: 50px;          /* Set the width of the circle */
-    height: 50px;         /* Set the height of the circle (same as width) */
-    background: #416933;  /* Choose your circle color */
-    border-radius: 50%;   /* Makes the div a circle */
+    width: 50px;          
+    height: 50px;         
+    background: #416933;  
+    border-radius: 50%; 
     display: inline-block;
     position: relative;
 }
 
+.circle {
+    flex: 1.1;
+    width: 80px;          
+    height: 80px;         
+    background: #416933;  
+    border-radius: 50%;   
+    display: inline-block;
+    position: relative;
+}
