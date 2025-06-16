@@ -1,0 +1,102 @@
+body, html, #main {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 575px;
+}
+
+#top-panel{
+    flex: 0.8;
+    background: rgb(221, 218, 218);
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+}
+
+#bottom-panel {
+    flex: 3;
+    background: white;
+}
+
+.circle {
+    flex: 1.1;
+    width: 80px;          /* Set the width of the circle */
+    height: 80px;         /* Set the height of the circle (same as width) */
+    background: #416933;  /* Choose your circle color */
+    border-radius: 50%;   /* Makes the div a circle */
+    display: inline-block;
+    position: relative;
+}
+
+.text-container {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    font-size: x-large;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.text {
+    font-size: medium;
+}
+
+.sub-container {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.button {
+    border-radius: 999px;
+    font-weight: 600px;
+    color: white;
+    background: rgb(92, 135, 228);
+    width: 80px;
+    padding: 5px;
+    text-decoration: none;
+}
+
+.product {
+    align-items: center;
+    gap: 16px;
+    padding: 16px;
+    display: flex;
+    flex-direction: row;
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.product img {
+    width: 80px;
+    height: 80px;
+
+}
+
+.subheading {
+    font-size: large;
+    font-weight: 600;
+}
+
+.circle-pdt {
+    width: 50px;          /* Set the width of the circle */
+    height: 50px;         /* Set the height of the circle (same as width) */
+    background: #416933;  /* Choose your circle color */
+    border-radius: 50%;   /* Makes the div a circle */
+    display: inline-block;
+    position: relative;
+}
+
