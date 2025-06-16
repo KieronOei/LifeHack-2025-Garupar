@@ -83,14 +83,14 @@ body, html, #main {
     font-weight: 600;
 }
 
-.circle-pdt {
+/* .circle-pdt {
     width: 50px;          
     height: 50px;         
     background: #416933;  
     border-radius: 50%; 
     display: inline-block;
     position: relative;
-}
+} */
 
 .circle {
     flex: 1.1;
