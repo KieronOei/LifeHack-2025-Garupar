@@ -45,7 +45,7 @@ body, html {
 }
 
 .sub-container {
-    margin-top: 30px;
+    margin-top: 20px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -132,6 +132,7 @@ body, html {
     font-size: small;
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
@@ -145,11 +146,13 @@ textarea {
     box-sizing: border-box;    
     vertical-align: top;        
     resize: none; 
-   
 }
 
-input {
-
+#reviewForm {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    gap: 12px;
 }
 
 input[type="text"].textbox, textarea.textbox {
@@ -167,6 +170,10 @@ textarea.textbox {
   height: 120px;      
   vertical-align: top;
   font-family: inherit;
+}
+
+.question {
+    font-size: 16px;
 }
 
 .star-rating {

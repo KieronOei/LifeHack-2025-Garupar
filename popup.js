@@ -13,6 +13,7 @@ const firebaseConfig = {
 const app = firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
 
+
 function updatePopupWithResults() {
   chrome.storage.local.get('reverseImageResults', function(data) {
     const results = data.reverseImageResults || [];
@@ -53,14 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
       
       //update main score
       getInfo(url).then(arr => {
-        progressCircle({ targetPercent: arr[1], size: 80, containerId: 'circle-main' });
-        document.getElementById('currentLearnMore').href = arr[2];
-      });
-
-      //update pdt 1
-
-      
-      getInfo(url).then(arr => {
+        document.getElementById('main-name').textContent = arr[0];
         progressCircle({ targetPercent: arr[1], size: 80, containerId: 'circle-main' });
         document.getElementById('currentLearnMore').href = arr[2];
       });
@@ -72,7 +66,10 @@ document.addEventListener('DOMContentLoaded', function() {
     progressCircle({ targetPercent: 85, size: 50, containerId: 'circle-pdt2' });
     progressCircle({ targetPercent: 75, size: 50, containerId: 'circle-pdt3' });
 
-    
+    // updateProduct(arr1, "pdt1")
+    // updateProduct(arr2, "pdt2")
+    // updateProduct(arr3, "pdt3")
+
     updateProduct(["/assets/icon128.png", "https://www.komodo.co.uk/collections/mens-knitwear/products/anton-organic-cotton-sweat-sand-melange"], "pdt1")
 });
 
