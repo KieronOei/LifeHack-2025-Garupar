@@ -1,27 +1,31 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const stars = document.querySelectorAll('#starRating .star');
-  const ratingValue = document.getElementById('ratingValue');
-  let selectedRating = 0;
+  // Select all star rating containers
+  const ratingContainers = document.querySelectorAll('.star-rating');
 
-  stars.forEach(star => {
-    star.addEventListener('mouseover', function() {
-      const val = parseInt(this.getAttribute('data-value'));
-      highlightStars(val);
-    });
-    star.addEventListener('mouseout', function() {
-      highlightStars(selectedRating);
-    });
-    star.addEventListener('click', function() {
-      selectedRating = parseInt(this.getAttribute('data-value'));
-      ratingValue.textContent = `Rating: ${selectedRating}`;
-      highlightStars(selectedRating);
-      // You can now use selectedRating as the user's rating
-    });
-  });
+  ratingContainers.forEach((container) => {
+    const stars = container.querySelectorAll('.star');
+    const ratingValue = container.querySelector('.ratingValue');
+    let selectedRating = 0;
 
-  function highlightStars(rating) {
     stars.forEach(star => {
-      star.classList.toggle('filled', parseInt(star.getAttribute('data-value')) <= rating);
+      star.addEventListener('mouseover', function() {
+        const val = parseInt(this.getAttribute('data-value'));
+        highlightStars(val, stars);
+      });
+      star.addEventListener('mouseout', function() {
+        highlightStars(selectedRating, stars);
+      });
+      star.addEventListener('click', function() {
+        selectedRating = parseInt(this.getAttribute('data-value'));
+        if (ratingValue) ratingValue.textContent = `Rating: ${selectedRating}`;
+        highlightStars(selectedRating, stars);
+      });
     });
-  }
+
+    function highlightStars(rating, stars) {
+      stars.forEach(star => {
+        star.classList.toggle('filled', parseInt(star.getAttribute('data-value')) <= rating);
+      });
+    }
+  });
 });
