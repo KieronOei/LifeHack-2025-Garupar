@@ -2,20 +2,30 @@
     "manifest_version": 3,
     "name": "GaruPar",
     "version": "1.0",
-
     "permissions": [
         "tabs",
         "activeTab",
-        "storage"
+        "storage",
+        "contextMenus",
+        "activeTab",
+        "scripting"
     ],
+    "background": {
+      "service_worker": "background.js"
+    },
     "content_security_policy": {
     "extension_pages": "script-src 'self'; object-src 'self';"
     },
+    "content_scripts": [
+      {
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+      }
+    ],
     "host_permissions": [
         "https://*.firebaseio.com/*",
         "https://www.googleapis.com/*"
     ],
-
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
