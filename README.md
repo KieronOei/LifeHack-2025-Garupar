@@ -13,8 +13,8 @@ Team Members: Chen Guanyou, Ng Jin Wei Lucas &amp; Kieron Benedict Oei Jun Jie
 Set up complete! 
 
 # How to use
-1. Go to one of these select websites (adidas, asos, bershka, fatface, fila, finisterre, gap, karee, komodo, ladage bonton, monsoon accessorize, nike, patagonia, people tree, pull&bear, seasalt, thenorthface, zara), it won't work with other websites due to limited information on our database.
-2. Find any shirt on the website and click into the product page.
+1. Go to one of these select websites (adidas, asos, bershka, fatface, fila, finisterre, gap, karee, komodo, ladage bonton, [nike](https://www.nike.com/sg/t/jordan-flight-essentials-85-t-shirt-9XTqRC/FZ1912-133), [patagonia](https://www.patagonia.com/product/mens-capilene-cool-daily-shirt/45215.html?dwvar_45215_color=BLK), [pull&bear](https://www.pullandbear.com/sg/tshirt-with-stwd-logo-l07245565?cS=251&pelement=692757365), [thenorthface](https://www.thenorthface.com/en-us/p/mens/mens-tops/mens-active-tops-224210/mens-adventure-tee-NF0A88X5?color=6HO), [zara]([https://www.zara.com/sg/](https://www.zara.com/sg/en/linen---cotton-t-shirt-p04853410.html?v1=438380544&v2=2415607))), it won't work with other websites due to limited information on our database.
+2. Find any men shirt on the website and click into the product page.
 3. Right click on the image and click on 'Reverse Image Search (AI)'. It works best for images of the shirt on its own. Click [here](https://www.zara.com/sg/en/basic-polo-shirt-p01887700.html) for an example
 4. Click on the 'Green Lens' extension to open it and let it load
 5. From the extension pop up window, you can interact with the other suggested products by clicking on the image to be redirected to the product page
