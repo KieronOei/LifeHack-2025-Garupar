@@ -129,7 +129,6 @@ body, html {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 12px;
 }
 
 input[type="text"] {
@@ -142,11 +141,11 @@ textarea {
     box-sizing: border-box;    
     vertical-align: top;        
     resize: none; 
-    margin-left: 25px; 
+   
 }
 
 input {
-    margin-left: 25px;
+
 }
 
 input[type="text"].textbox, textarea.textbox {
@@ -164,11 +163,6 @@ textarea.textbox {
   height: 120px;      
   vertical-align: top;
   font-family: inherit;
-}
-
-
-.question {
-
 }
 
 .star-rating {

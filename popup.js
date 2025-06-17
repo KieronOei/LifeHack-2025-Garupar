@@ -18,32 +18,35 @@ const db = firebase.database();
 let url;
 let companyName;
 document.addEventListener('DOMContentLoaded', function() {
-    // Retrieve brand URL
+    
     chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-    url = tabs[0].url;
-    console.log("Current tab URL:", url);
-
-    companyName = getCompanyName(url); 
-    console.log("Company name:", companyName);
-
-    // Update brand score
-    getScore(companyName, function(result) {
-      progressCircle({ targetPercent: result, size: 80, containerId: 'circle-main' });
-      console.log("score: ", result);
+      // Retrieve brand URL
+      url = tabs[0].url;
+      
+      //update main score
+      getInfo(url).then(arr => {
+        progressCircle({ targetPercent: arr[1], size: 80, containerId: 'circle-main' });
+        document.getElementById('currentLearnMore').href = arr[2];
       });
 
-    // Update learn more URL
-    getLearnMoreURL(companyName, function(result) {
-      document.getElementById('currentLearnMore').href = result;
-      console.log("learn more link: ", result);
-    });
+      //update pdt 1
+
+      
+      getInfo(url).then(arr => {
+        progressCircle({ targetPercent: arr[1], size: 80, containerId: 'circle-main' });
+        document.getElementById('currentLearnMore').href = arr[2];
+      });
 
     });
+    
     
     //circles
     progressCircle({ targetPercent: 95, size: 50, containerId: 'circle-pdt1' });
     progressCircle({ targetPercent: 85, size: 50, containerId: 'circle-pdt2' });
     progressCircle({ targetPercent: 75, size: 50, containerId: 'circle-pdt3' });
+
+    
+
 });
 
 
