@@ -113,6 +113,10 @@ body, html {
     cursor: pointer;
 }
 
+.tab.active-tab {
+    border-bottom: 3px solid #000000;
+}
+
 #tab-top {
     display: flex;
     background: rgb(221, 218, 218);

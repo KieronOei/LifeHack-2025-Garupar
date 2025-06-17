@@ -8,6 +8,10 @@ document.addEventListener('DOMContentLoaded', function() {
       reviewsView.style.display = 'none';
       feedbackView.style.display = 'flex';
 
+      // Remove active-tab from home & add active-tab to feedback
+      document.getElementById('home').classList.remove('active-tab');
+      document.getElementById('feedback').classList.add('active-tab');
+
       // For review form submission
 
       document.getElementById('reviewForm').addEventListener('submit', function(event) {
@@ -44,6 +48,10 @@ document.addEventListener('DOMContentLoaded', function() {
     goReviewsBtn.addEventListener('click', function() {
       feedbackView.style.display = 'none';
       reviewsView.style.display = 'flex';
+
+      // Remove active-tab from feedback & add active-tab to home
+      document.getElementById('feedback').classList.remove('active-tab');
+      document.getElementById('home').classList.add('active-tab');
     });
 
     
