@@ -8,7 +8,7 @@ chrome.runtime.onInstalled.addListener(() => {
 
 chrome.contextMenus.onClicked.addListener(async (info, tab) => {
   if (info.menuItemId === "reverse-image-search") {
-    const apiUrl = 'http://127.0.0.1:8000/search_url';
+    const apiUrl = 'http://192.168.1.17:8000/search_url';
     const imageUrl = info.srcUrl;
 
     try {
