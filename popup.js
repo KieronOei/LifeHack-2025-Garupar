@@ -16,13 +16,14 @@ const db = firebase.database();
 
 // On-start
 let url;
+let companyName;
 document.addEventListener('DOMContentLoaded', function() {
     // Retrieve brand URL
     chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
     url = tabs[0].url;
     console.log("Current tab URL:", url);
 
-    const companyName = getCompanyName(url); 
+    companyName = getCompanyName(url); 
     console.log("Company name:", companyName);
 
     // Update brand score
