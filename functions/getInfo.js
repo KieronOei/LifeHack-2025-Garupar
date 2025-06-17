@@ -27,4 +27,3 @@ async function getInfo(url) {
   }
 }
 
-// brand name, score, learn more
