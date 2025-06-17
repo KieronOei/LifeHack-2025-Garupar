@@ -10,14 +10,39 @@ const firebaseConfig = {
   measurementId: "G-HW9N3WV8R5"
 };
 
-const app = firebase.initializeApp(firebaseConfig);
-const db = firebase.database();
-
+function updatePopupWithResults() {
+  chrome.storage.local.get('reverseImageResults', function(data) {
+    const results = data.reverseImageResults || [];
+    if (results.length > 0) {
+      const pdt1 = results[0];
+      const pdt2 = results[1];
+      const pdt3 = results[2];
+      const img1 = document.getElementById('1');
+      const img2 = document.getElementById("2");
+      const img3 = document.getElementById("3");
+      img1.src = pdt1.image_url;
+      img2.src = pdt2.image_url;
+      img3.src = pdt3.image_url;
+      // ...update other popup elements as needed...
+    } else {
+      document.getElementById('reverseResults').textContent = "No results found.";
+    }
+  });
+}
 
 // On-start
 let url;
 let companyName;
 document.addEventListener('DOMContentLoaded', function() {
+    updatePopupWithResults();
+
+    // Listen for background message
+    chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+      if (message.type === 'REVERSE_RESULTS_READY') {
+        updatePopupWithResults();
+        console.log("updated");
+      }
+    });
     
     chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
       // Retrieve brand URL
@@ -40,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     
     
-    //circles
+    circles
     progressCircle({ targetPercent: 95, size: 50, containerId: 'circle-pdt1' });
     progressCircle({ targetPercent: 85, size: 50, containerId: 'circle-pdt2' });
     progressCircle({ targetPercent: 75, size: 50, containerId: 'circle-pdt3' });

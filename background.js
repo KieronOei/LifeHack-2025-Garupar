@@ -18,33 +18,20 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
         body: JSON.stringify({image_url: imageUrl})
       });
 
+      const data = await response.json();
+      chrome.storage.local.set({ reverseImageResults: data.results }, () => {
+      // Send a message to all extension views (including popup)
+        chrome.runtime.sendMessage({ type: 'REVERSE_RESULTS_READY' });
+      });
+      console.log("Results received:", data);
+      chrome.storage.local.set({ reverseImageResults: data.results });
+
       if (!response.ok) {
         const errorData = await response.json();
         throw new Error(errorData.detail || "Unknown error");
       }
 
-      const data = await response.json();
-      console.log("Results received:", data);
 
-      // Display results in a new tab
-      const html = `
-        <html>
-          <body>
-            <h2>AI Reverse Image Search Results</h2>
-            ${data.results.length ? data.results.map(item => `
-              <div>
-                <img src="${item.image_url}" width="100"/><br/>
-                <b>${item.title}</b><br/>
-                <a href="${item.product_url}" target="_blank">View Product</a><br/>
-                Score: ${item.score.toFixed(3)}
-              </div>
-              <hr/>
-            `).join('') : 'No results found.'}
-          </body>
-        </html>
-      `;
-      const url = "data:text/html;charset=utf-8," + encodeURIComponent(html);
-      chrome.tabs.create({ url });
     } catch (err) {
       console.log('Error:', err);
       chrome.notifications.create({
