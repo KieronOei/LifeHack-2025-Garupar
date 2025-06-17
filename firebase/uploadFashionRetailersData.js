@@ -24,28 +24,6 @@ const fashionRetailers = {
       "gsgEthicalScore": 100,
       "ethicalAccreditation": true,
       learnMore: {
-        environment: {
-          environmentalReport: "y",
-          organic: "y",
-          nuclearPower: "y",
-          betterCottonInitiative: "y",
-          fossilFuels: "y"
-        },
-        animal: {
-          animalWelfare: "y"
-        },
-        people: {
-          armaments: "y",
-          codeOfConduct: "y",
-          politicalDonations: "y",
-          ethicalTradingSchemes: "y",
-          humanRights: "y"
-        },
-        other: {
-          ethicalAccreditation: "y",
-          otherCriticisms: "y",
-          ethicalInnovator: "y"
-        },
         link: "https://thegoodshoppingguide.com/brand-directory/komodo/?_gl=1*1rdbvd2*_up*MQ..*_ga*MTY5MTQzODQzLjE3NTAwODkzMzE.*_ga_PYEMHYT21H*czE3NTAwODkzMzAkbzEkZzEkdDE3NTAwODkzNDIkajQ4JGwwJGgw"
       }
     },
@@ -55,28 +33,6 @@ const fashionRetailers = {
       "gsgEthicalScore": 100,
       "ethicalAccreditation": true,
       learnMore: {
-        environment: {
-          environmentalReport: "y",
-          organic: "na",
-          nuclearPower: "y",
-          betterCottonInitiative: "na",
-          fossilFuels: "y"
-        },
-        animal: {
-          animalWelfare: "y"
-        },
-        people: {
-          armaments: "y",
-          codeOfConduct: "y",
-          politicalDonations: "y",
-          ethicalTradingSchemes: "na",
-          humanRights: "y"
-        },
-        other: {
-          ethicalAccreditation: "y",
-          otherCriticisms: "y",
-          ethicalInnovator: "y"
-        },
         link: "https://thegoodshoppingguide.com/brand-directory/ladage-bonton/?_gl=1*vvcduw*_up*MQ..*_ga*MTY5MTQzODQzLjE3NTAwODkzMzE.*_ga_PYEMHYT21H*czE3NTAwODkzMzAkbzEkZzEkdDE3NTAwODkzNDIkajQ4JGwwJGgw"
       }
     },
@@ -86,28 +42,6 @@ const fashionRetailers = {
       "gsgEthicalScore": 99,
       "ethicalAccreditation": false,
       learnMore: {
-        environment: {
-          environmentalReport: "y",
-          organic: "y",
-          nuclearPower: "y",
-          betterCottonInitiative: "na",
-          fossilFuels: "y"
-        },
-        animal: {
-          animalWelfare: "y"
-        },
-        people: {
-          armaments: "y",
-          codeOfConduct: "y",
-          politicalDonations: "y",
-          ethicalTradingSchemes: "na",
-          humanRights: "y"
-        },
-        other: {
-          ethicalAccreditation: "n",
-          otherCriticisms: "y",
-          ethicalInnovator: "y"
-        },
         link: "https://thegoodshoppingguide.com/brand-directory/finisterre/?_gl=1*l1k9p2*_up*MQ..*_ga*MTY5MTQzODQzLjE3NTAwODkzMzE.*_ga_PYEMHYT21H*czE3NTAwODkzMzAkbzEkZzEkdDE3NTAwODkzNDIkajQ4JGwwJGgw"
       }
     },
@@ -117,28 +51,6 @@ const fashionRetailers = {
       "gsgEthicalScore": 99,
       "ethicalAccreditation": true,
       learnMore: {
-        environment: {
-          environmentalReport: "y",
-          organic: "n",
-          nuclearPower: "y",
-          betterCottonInitiative: "na",
-          fossilFuels: "y"
-        },
-        animal: {
-          animalWelfare: "y"
-        },
-        people: {
-          armaments: "y",
-          codeOfConduct: "y",
-          politicalDonations: "y",
-          ethicalTradingSchemes: "na",
-          humanRights: "y"
-        },
-        other: {
-          ethicalAccreditation: "y",
-          otherCriticisms: "y",
-          ethicalInnovator: "y"
-        },
         link: "https://thegoodshoppingguide.com/brand-directory/karee/?_gl=1*1pfm7qw*_up*MQ..*_ga*MTY5MTQzODQzLjE3NTAwODkzMzE.*_ga_PYEMHYT21H*czE3NTAwODkzMzAkbzEkZzEkdDE3NTAwODkzNDIkajQ4JGwwJGgw"
       }
     },
@@ -148,28 +60,6 @@ const fashionRetailers = {
       "gsgEthicalScore": 99,
       "ethicalAccreditation": false,
       learnMore: {
-        environment: {
-          environmentalReport: "y",
-          organic: "y",
-          nuclearPower: "y",
-          betterCottonInitiative: "na",
-          fossilFuels: "y"
-        },
-        animal: {
-          animalWelfare: "y"
-        },
-        people: {
-          armaments: "y",
-          codeOfConduct: "y",
-          politicalDonations: "y",
-          ethicalTradingSchemes: "y",
-          humanRights: "y"
-        },
-        other: {
-          ethicalAccreditation: "n",
-          otherCriticisms: "y",
-          ethicalInnovator: "y"
-        },
         link: "https://thegoodshoppingguide.com/brand-directory/people-tree/?_gl=1*1053ur5*_up*MQ..*_ga*MTY5MTQzODQzLjE3NTAwODkzMzE.*_ga_PYEMHYT21H*czE3NTAwODkzMzAkbzEkZzEkdDE3NTAwODkzNDIkajQ4JGwwJGgw"
       }
     },
@@ -179,59 +69,15 @@ const fashionRetailers = {
       "gsgEthicalScore": 99,
       "ethicalAccreditation": true,
       learnMore: {
-        environment: {
-          environmentalReport: "y",
-          organic: "n",
-          nuclearPower: "y",
-          betterCottonInitiative: "na",
-          fossilFuels: "y"
-        },
-        animal: {
-          animalWelfare: "y"
-        },
-        people: {
-          armaments: "y",
-          codeOfConduct: "y",
-          politicalDonations: "y",
-          ethicalTradingSchemes: "na",
-          humanRights: "y"
-        },
-        other: {
-          ethicalAccreditation: "y",
-          otherCriticisms: "y",
-          ethicalInnovator: "y"
-        },
         link: "https://thegoodshoppingguide.com/brand-directory/school-uniform-shop/?_gl=1*1053ur5*_up*MQ..*_ga*MTY5MTQzODQzLjE3NTAwODkzMzE.*_ga_PYEMHYT21H*czE3NTAwODkzMzAkbzEkZzEkdDE3NTAwODkzNDIkajQ4JGwwJGgw"
       }
     },
     "seaSalt": {
       "brandName": "Seasalt",
-      "brandURL": "seasalt",
+      "brandURL": "seasaltcornwall",
       "gsgEthicalScore": 80,
       "ethicalAccreditation": false,
       learnMore: {
-        environment: {
-          environmentalReport: "y",
-          organic: "n",
-          nuclearPower: "y",
-          betterCottonInitiative: "n",
-          fossilFuels: "y"
-        },
-        animal: {
-          animalWelfare: "y"
-        },
-        people: {
-          armaments: "y",
-          codeOfConduct: "y",
-          politicalDonations: "y",
-          ethicalTradingSchemes: "y",
-          humanRights: "y"
-        },
-        other: {
-          ethicalAccreditation: "n",
-          otherCriticisms: "m",
-          ethicalInnovator: "na"
-        },
         link: "https://thegoodshoppingguide.com/brand-directory/seasalt/?_gl=1*1qyyapu*_up*MQ..*_ga*MTY5MTQzODQzLjE3NTAwODkzMzE.*_ga_PYEMHYT21H*czE3NTAwODkzMzAkbzEkZzEkdDE3NTAwODkzNDIkajQ4JGwwJGgw"
       }
     },
@@ -241,28 +87,6 @@ const fashionRetailers = {
       "gsgEthicalScore": 79,
       "ethicalAccreditation": false,
       learnMore: {
-        environment: {
-          environmentalReport: "y",
-          organic: "y",
-          nuclearPower: "y",
-          betterCottonInitiative: "n",
-          fossilFuels: "y"
-        },
-        animal: {
-          animalWelfare: "y"
-        },
-        people: {
-          armaments: "y",
-          codeOfConduct: "y",
-          politicalDonations: "n",
-          ethicalTradingSchemes: "y",
-          humanRights: "m"
-        },
-        other: {
-          ethicalAccreditation: "n",
-          otherCriticisms: "y",
-          ethicalInnovator: "y"
-        },
         link: "https://thegoodshoppingguide.com/brand-directory/patagonia/?_gl=1*9vihes*_up*MQ..*_ga*MTY5MTQzODQzLjE3NTAwODkzMzE.*_ga_PYEMHYT21H*czE3NTAwODkzMzAkbzEkZzEkdDE3NTAwODkzNDIkajQ4JGwwJGgw"
       }
     },
@@ -272,28 +96,6 @@ const fashionRetailers = {
       "gsgEthicalScore": 77,
       "ethicalAccreditation": false,
       learnMore: {
-        environment: {
-          environmentalReport: "y",
-          organic: "y",
-          nuclearPower: "y",
-          betterCottonInitiative: "y",
-          fossilFuels: "y"
-        },
-        animal: {
-          animalWelfare: "y"
-        },
-        people: {
-          armaments: "y",
-          codeOfConduct: "m",
-          politicalDonations: "y",
-          ethicalTradingSchemes: "y",
-          humanRights: "m"
-        },
-        other: {
-          ethicalAccreditation: "n",
-          otherCriticisms: "m",
-          ethicalInnovator: "na"
-        },
         link: "https://thegoodshoppingguide.com/brand-directory/fat-face/?_gl=1*1e9l4i2*_up*MQ..*_ga*MTY5MTQzODQzLjE3NTAwODkzMzE.*_ga_PYEMHYT21H*czE3NTAwODkzMzAkbzEkZzEkdDE3NTAwODkzNDIkajQ4JGwwJGgw"
       }
     },
@@ -303,28 +105,6 @@ const fashionRetailers = {
       "gsgEthicalScore": 73,
       "ethicalAccreditation": false,
       learnMore: {
-        environment: {
-          environmentalReport: "y",
-          organic: "n",
-          nuclearPower: "y",
-          betterCottonInitiative: "y",
-          fossilFuels: "y"
-        },
-        animal: {
-          animalWelfare: "y"
-        },
-        people: {
-          armaments: "y",
-          codeOfConduct: "y",
-          politicalDonations: "y",
-          ethicalTradingSchemes: "y",
-          humanRights: "y"
-        },
-        other: {
-          ethicalAccreditation: "n",
-          otherCriticisms: "n",
-          ethicalInnovator: "na"
-        },
         link: "https://thegoodshoppingguide.com/brand-directory/whistles/?_gl=1*1n9oczd*_up*MQ..*_ga*MTY5MTQzODQzLjE3NTAwODkzMzE.*_ga_PYEMHYT21H*czE3NTAwODkzMzAkbzEkZzEkdDE3NTAwODkzNDIkajQ4JGwwJGgw"
       }
     },
@@ -334,28 +114,6 @@ const fashionRetailers = {
       "gsgEthicalScore": 70,
       "ethicalAccreditation": false,
       learnMore: {
-        environment: {
-          environmentalReport: "m",
-          organic: "n",
-          nuclearPower: "y",
-          betterCottonInitiative: "n",
-          fossilFuels: "y"
-        },
-        animal: {
-          animalWelfare: "y"
-        },
-        people: {
-          armaments: "y",
-          codeOfConduct: "y",
-          politicalDonations: "y",
-          ethicalTradingSchemes: "y",
-          humanRights: "y"
-        },
-        other: {
-          ethicalAccreditation: "n",
-          otherCriticisms: "m",
-          ethicalInnovator: "na"
-        },
         link: "https://thegoodshoppingguide.com/brand-directory/monsoon-accessorize/?_gl=1*1n9oczd*_up*MQ..*_ga*MTY5MTQzODQzLjE3NTAwODkzMzE.*_ga_PYEMHYT21H*czE3NTAwODkzMzAkbzEkZzEkdDE3NTAwODkzNDIkajQ4JGwwJGgw"
       }
     },
@@ -365,29 +123,97 @@ const fashionRetailers = {
       "gsgEthicalScore": 70,
       "ethicalAccreditation": false,
       learnMore: {
-        environment: {
-          environmentalReport: "y",
-          organic: "n",
-          nuclearPower: "y",
-          betterCottonInitiative: "y",
-          fossilFuels: "y"
-        },
-        animal: {
-          animalWelfare: "n"
-        },
-        people: {
-          armaments: "y",
-          codeOfConduct: "y",
-          politicalDonations: "y",
-          ethicalTradingSchemes: "y",
-          humanRights: "y"
-        },
-        other: {
-          ethicalAccreditation: "n",
-          otherCriticisms: "n",
-          ethicalInnovator: "na"
-        },
         link: "https://thegoodshoppingguide.com/brand-directory/phase-eight/?_gl=1*imox7b*_up*MQ..*_ga*MTY5MTQzODQzLjE3NTAwODkzMzE.*_ga_PYEMHYT21H*czE3NTAwODkzMzAkbzEkZzEkdDE3NTAwODkzNDIkajQ4JGwwJGgw"
+      }
+    },
+    "asos": {
+      "brandName": "ASOS",
+      "brandURL": "asos",
+      "gsgEthicalScore": 67,
+      "ethicalAccreditation": false,
+      learnMore: {
+        link: "https://thegoodshoppingguide.com/brand-directory/asos/?_gl=1*bgtf8s*_up*MQ..*_ga*ODIwNTk2MTM4LjE3NTAxNTM4MzY.*_ga_PYEMHYT21H*czE3NTAxNTM4MzYkbzEkZzAkdDE3NTAxNTM4MzYkajYwJGwwJGgw"
+      }
+    },
+    "bershka": {
+      "brandName": "Bershka",
+      "brandURL": "bershka",
+      "gsgEthicalScore": 53,
+      "ethicalAccreditation": false,
+      learnMore: {
+        link: "https://thegoodshoppingguide.com/brand-directory/bershka/?_gl=1*ki63mn*_up*MQ..*_ga*ODIwNTk2MTM4LjE3NTAxNTM4MzY.*_ga_PYEMHYT21H*czE3NTAxNTM4MzYkbzEkZzAkdDE3NTAxNTM4MzYkajYwJGwwJGgw"
+      }
+    },
+    "gap": {
+      "brandName": "Gap",
+      "brandURL": "gap",
+      "gsgEthicalScore": 53,
+      "ethicalAccreditation": false,
+      learnMore: {
+        link: "https://thegoodshoppingguide.com/brand-directory/gap/?_gl=1*1pyxzsh*_up*MQ..*_ga*ODIwNTk2MTM4LjE3NTAxNTM4MzY.*_ga_PYEMHYT21H*czE3NTAxNTM4MzYkbzEkZzAkdDE3NTAxNTM4MzYkajYwJGwwJGgw"
+      }
+    },
+    "pull&bear": {
+      "brandName": "Pull&Bear",
+      "brandURL": "pullandbear",
+      "gsgEthicalScore": 53,
+      "ethicalAccreditation": false,
+      learnMore: {
+        link: "https://thegoodshoppingguide.com/brand-directory/pull-bear/?_gl=1*1rwltu7*_up*MQ..*_ga*ODIwNTk2MTM4LjE3NTAxNTM4MzY.*_ga_PYEMHYT21H*czE3NTAxNTM4MzYkbzEkZzAkdDE3NTAxNTM4MzYkajYwJGwwJGgw"
+      }
+    },
+    "thenorthface": {
+      "brandName": "The North Face",
+      "brandURL": "thenorthface",
+      "gsgEthicalScore": 53,
+      "ethicalAccreditation": false,
+      learnMore: {
+        link: "https://thegoodshoppingguide.com/brand-directory/the-north-face/?_gl=1*1fgp5za*_up*MQ..*_ga*ODIwNTk2MTM4LjE3NTAxNTM4MzY.*_ga_PYEMHYT21H*czE3NTAxNTM4MzYkbzEkZzAkdDE3NTAxNTM4MzYkajYwJGwwJGgw"
+      }
+    },
+    "zara": {
+      "brandName": "Zara",
+      "brandURL": "zara",
+      "gsgEthicalScore": 53,
+      "ethicalAccreditation": false,
+      learnMore: {
+        link: "https://thegoodshoppingguide.com/brand-directory/zara/?_gl=1*1fgp5za*_up*MQ..*_ga*ODIwNTk2MTM4LjE3NTAxNTM4MzY.*_ga_PYEMHYT21H*czE3NTAxNTM4MzYkbzEkZzAkdDE3NTAxNTM4MzYkajYwJGwwJGgw"
+      }
+    },
+    "fila": {
+      "brandName": "Fila",
+      "brandURL": "fila",
+      "gsgEthicalScore": 53,
+      "ethicalAccreditation": false,
+      learnMore: {
+        link: "https://thegoodshoppingguide.com/brand-directory/fila-fashion-retailers/?_gl=1*d94vmw*_up*MQ..*_ga*ODIwNTk2MTM4LjE3NTAxNTM4MzY.*_ga_PYEMHYT21H*czE3NTAxNTM4MzYkbzEkZzAkdDE3NTAxNTM4MzYkajYwJGwwJGgw"
+      }
+    },
+    "h&m": {
+      "brandName": "H&M",
+      "brandURL": "hm",
+      "gsgEthicalScore": 48,
+      "ethicalAccreditation": false,
+      learnMore: {
+        link: "https://thegoodshoppingguide.com/brand-directory/hm/?_gl=1*1ofdyyd*_up*MQ..*_ga*ODIwNTk2MTM4LjE3NTAxNTM4MzY.*_ga_PYEMHYT21H*czE3NTAxNTM4MzYkbzEkZzAkdDE3NTAxNTM4MzYkajYwJGwwJGgw"
+      }
+    },
+    "adidas": {
+      "brandName": "adidas",
+      "brandURL": "adidas",
+      "gsgEthicalScore": 41,
+      "ethicalAccreditation": false,
+      learnMore: {
+        link: "https://thegoodshoppingguide.com/brand-directory/adidas-fashion-retailers/?_gl=1*13f4xrx*_up*MQ..*_ga*ODIwNTk2MTM4LjE3NTAxNTM4MzY.*_ga_PYEMHYT21H*czE3NTAxNTM4MzYkbzEkZzAkdDE3NTAxNTM4MzYkajYwJGwwJGgw"
+      }
+    },
+    "nike": {
+      "brandName": "nike",
+      "brandURL": "nike",
+      "gsgEthicalScore": 37,
+      "ethicalAccreditation": false,
+      learnMore: {
+        link: "https://thegoodshoppingguide.com/brand-directory/nike-fashion-retailers/?_gl=1*6ug76b*_up*MQ..*_ga*ODIwNTk2MTM4LjE3NTAxNTM4MzY.*_ga_PYEMHYT21H*czE3NTAxNTM4MzYkbzEkZzAkdDE3NTAxNTM4MzYkajYwJGwwJGgw"
       }
     }
   }
