@@ -189,15 +189,6 @@ const fashionRetailers = {
         link: "https://thegoodshoppingguide.com/brand-directory/fila-fashion-retailers/?_gl=1*d94vmw*_up*MQ..*_ga*ODIwNTk2MTM4LjE3NTAxNTM4MzY.*_ga_PYEMHYT21H*czE3NTAxNTM4MzYkbzEkZzAkdDE3NTAxNTM4MzYkajYwJGwwJGgw"
       }
     },
-    "h&m": {
-      "brandName": "H&M",
-      "brandURL": "hm",
-      "gsgEthicalScore": 48,
-      "ethicalAccreditation": false,
-      learnMore: {
-        link: "https://thegoodshoppingguide.com/brand-directory/hm/?_gl=1*1ofdyyd*_up*MQ..*_ga*ODIwNTk2MTM4LjE3NTAxNTM4MzY.*_ga_PYEMHYT21H*czE3NTAxNTM4MzYkbzEkZzAkdDE3NTAxNTM4MzYkajYwJGwwJGgw"
-      }
-    },
     "adidas": {
       "brandName": "adidas",
       "brandURL": "adidas",
