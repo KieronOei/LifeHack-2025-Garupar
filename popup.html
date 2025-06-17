@@ -3,6 +3,8 @@
 <head>
     <title>GaruPar</title>
     <link rel="stylesheet" href="popup.css">
+    <script src="functions/starAnimation.js"></script> 
+    <script src="functions/tabs.js"></script>
     <script src="functions/getScore.js"></script>
     <script src="functions/getLearnMoreURL.js"></script>
     <script src="functions/getCompanyName.js"></script>
@@ -13,7 +15,7 @@
     
 </head>
 <body>
-    <div id="main">
+    <div id="main" style="display: none;">
         <div id="top-panel">
             <!-- [ [percentage], [benchmark no], [website reviews], [website learn more]] -->
             <div id="circle-main"></div> 
@@ -31,8 +33,6 @@
         </div>
 
         <div id="bottom-panel">
-            <div class="text">Our Suggestions</div>
-            
             <div class="product">
                 <!-- [[img], ,[website of the pdt], [brand name], [website learn more], [score]] -->
                 <a href="#" target="_blank" rel="noopener noreferrer">
@@ -80,6 +80,53 @@
             </div>
         </div>
     </div>
+    
+    <div id="main2">
+        <div id="tab-top">
+            Write a review for us!
+        </div>
+
+        <div id="tab-bottom">
+            <input type="text" class="textbox" placeholder="Your Name">
+            <input type="text" class="textbox" placeholder="Company/Product">
+            <input type="text" class="textbox" placeholder="Your Review!" style="height: 200px;">
+ 
+            <div class="star-rating" id="starRating">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <p id="ratingValue">Rating: 0</p>
+
+             <div class="star-rating" id="starRating2">
+                <span class="star" data-value="1">&#9733;</span>
+                <span class="star" data-value="2">&#9733;</span>
+                <span class="star" data-value="3">&#9733;</span>
+                <span class="star" data-value="4">&#9733;</span>
+                <span class="star" data-value="5">&#9733;</span>
+            </div>
+            <p id="ratingValue">Rating: 0</p>
+
+
+        </div>
+    </div>
+
+    <div id="tabs">
+        <div class="tab-container">
+            <button id="home" class="tab">
+                <img src="assets/home.png" alt="">
+            </button>     
+        </div>
+
+        <div class="tab-container">
+            <button id="feedback" class="tab">
+                <img src="assets/feedback.png" alt="">
+            </button>
+        </div>
+    </div>
+
     
 </body>
 </html>
