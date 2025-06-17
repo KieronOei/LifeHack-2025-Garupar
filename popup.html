@@ -4,6 +4,7 @@
     <title>GaruPar</title>
     <link rel="stylesheet" href="popup.css">
     <script src="functions/getScore.js"></script>
+    <script src="functions/getLearnMoreURL.js"></script>
     <script src="functions/getCompanyName.js"></script>
     <script src="functions/progressCircle.js"></script>
     <script src="firebase/firebase-app-compat.js"></script>
@@ -19,11 +20,11 @@
 
             <div class="text-main" style="border-left: 0px;">
                 <div class="header">BenchMark Rating</div>
-                <div class="text"><span style="font-weight: 600;">80</span> for this category</div>
+                <div class="text"><span style="font-weight: 600;">68</span> for this category</div>
                 
                 <div class="sub-container">
                     <a href="#" class="button" target="_blank" rel="noopener noreferrer">Reviews</a>
-                    <a href="#" class="button" target="_blank" rel="noopener noreferrer">Learn More</a>
+                    <a id="currentLearnMore" href="#" class="button" target="_blank" rel="noopener noreferrer">Learn More</a>
                 </div>
                  
             </div>

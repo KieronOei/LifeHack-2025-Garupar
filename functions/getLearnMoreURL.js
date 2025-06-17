@@ -1,17 +1,17 @@
-function getScore(companyName, callback) {
+function getLearnMoreURL(companyName, callback) {
   // Reference the 'fashionRetailers' node
   const ref = firebase.database().ref('fashionRetailers');
   
   // Fetch all retailers under 'fashionRetailers'
   ref.once('value', (snapshot) => {
-    let foundScore = null;
+    let foundURL = null;
     snapshot.forEach(childSnapshot => {
       const data = childSnapshot.val();
       // Case-insensitive comparison for brand name
       if (data.brandURL === companyName) {
-        foundScore = data.gsgEthicalScore;
+        foundURL = data.learnMore.link;
       }
     });
-    callback(foundScore); // Will be null if not found
+    callback(foundURL); // Will be null if not found
   });
 }

@@ -20,6 +20,7 @@ const fashionRetailers = {
   "fashionRetailers": {
     "komodo": {
       "brandName": "Komodo",
+      "brandURL": "komodo",
       "gsgEthicalScore": 100,
       "ethicalAccreditation": true,
       learnMore: {
@@ -50,6 +51,7 @@ const fashionRetailers = {
     },
     "ladageBonton": {
       "brandName": "Ladage Bonton",
+      "brandURL": "ladagebonton",
       "gsgEthicalScore": 100,
       "ethicalAccreditation": true,
       learnMore: {
@@ -80,6 +82,7 @@ const fashionRetailers = {
     },
     "finisterre": {
       "brandName": "Finisterre",
+      "brandURL": "finisterre",
       "gsgEthicalScore": 99,
       "ethicalAccreditation": false,
       learnMore: {
@@ -110,6 +113,7 @@ const fashionRetailers = {
     },
     "karee": {
       "brandName": "Karee",
+      "brandURL": "karee",
       "gsgEthicalScore": 99,
       "ethicalAccreditation": true,
       learnMore: {
@@ -140,6 +144,7 @@ const fashionRetailers = {
     },
     "peopleTree": {
       "brandName": "People Tree",
+      "brandURL": "peopletree",
       "gsgEthicalScore": 99,
       "ethicalAccreditation": false,
       learnMore: {
@@ -170,6 +175,7 @@ const fashionRetailers = {
     },
     "schoolUniformShop": {
       "brandName": "School Uniform Shop",
+      "brandURL": "schooluniformshop",
       "gsgEthicalScore": 99,
       "ethicalAccreditation": true,
       learnMore: {
@@ -200,6 +206,7 @@ const fashionRetailers = {
     },
     "seaSalt": {
       "brandName": "Seasalt",
+      "brandURL": "seasalt",
       "gsgEthicalScore": 80,
       "ethicalAccreditation": false,
       learnMore: {
@@ -230,6 +237,7 @@ const fashionRetailers = {
     },
     "patagonia": {
       "brandName": "Patagonia",
+      "brandURL": "patagonia",
       "gsgEthicalScore": 79,
       "ethicalAccreditation": false,
       learnMore: {
@@ -260,6 +268,7 @@ const fashionRetailers = {
     },
     "fatFace": {
       "brandName": "Fat Face",
+      "brandURL": "fatface",
       "gsgEthicalScore": 77,
       "ethicalAccreditation": false,
       learnMore: {
@@ -290,6 +299,7 @@ const fashionRetailers = {
     },
     "whistles": {
       "brandName": "Whistles",
+      "brandURL": "whistles",
       "gsgEthicalScore": 73,
       "ethicalAccreditation": false,
       learnMore: {
@@ -320,6 +330,7 @@ const fashionRetailers = {
     },
     "monsoonAccessorize": {
       "brandName": "Monsoon Accessorize",
+      "brandURL": "monsoon",
       "gsgEthicalScore": 70,
       "ethicalAccreditation": false,
       learnMore: {
@@ -350,6 +361,7 @@ const fashionRetailers = {
     },
     "phaseEight": {
       "brandName": "Phase Eight",
+      "brandURL": "phase-eight",
       "gsgEthicalScore": 70,
       "ethicalAccreditation": false,
       learnMore: {
