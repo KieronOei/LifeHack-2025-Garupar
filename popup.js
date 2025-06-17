@@ -13,7 +13,7 @@ const firebaseConfig = {
 const app = firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
 
-
+let arr1, arr2, arr3;
 function updatePopupWithResults() {
   chrome.storage.local.get('reverseImageResults', function(data) {
     const results = data.reverseImageResults || [];
@@ -21,12 +21,15 @@ function updatePopupWithResults() {
       const pdt1 = results[0];
       const pdt2 = results[1];
       const pdt3 = results[2];
-      const img1 = document.getElementById('1');
-      const img2 = document.getElementById("2");
-      const img3 = document.getElementById("3");
-      img1.src = pdt1.image_url;
-      img2.src = pdt2.image_url;
-      img3.src = pdt3.image_url;
+      // const img1 = document.getElementById('1');
+      // const img2 = document.getElementById("2");
+      // const img3 = document.getElementById("3");
+      // img1.src = pdt1.image_url;
+      // img2.src = pdt2.image_url;
+      // img3.src = pdt3.image_url;
+      arr1 = [pdt1.image_url, pdt1.product_url];
+      arr2 = [pdt2.image_url, pdt2.product_url];
+      arr3 = [pdt3.image_url, pdt3.product_url];
       // ...update other popup elements as needed...
     } else {
       document.getElementById('reverseResults').textContent = "No results found.";
@@ -54,7 +57,14 @@ document.addEventListener('DOMContentLoaded', function() {
       
       //update main score
       getInfo(url).then(arr => {
-        document.getElementById('main-name').textContent = arr[0];
+        progressCircle({ targetPercent: arr[1], size: 80, containerId: 'circle-main' });
+        document.getElementById('currentLearnMore').href = arr[2];
+      });
+
+      //update pdt 1
+
+      
+      getInfo(url).then(arr => {
         progressCircle({ targetPercent: arr[1], size: 80, containerId: 'circle-main' });
         document.getElementById('currentLearnMore').href = arr[2];
       });
@@ -63,14 +73,14 @@ document.addEventListener('DOMContentLoaded', function() {
     
     
     //circles
-    progressCircle({ targetPercent: 85, size: 50, containerId: 'circle-pdt2' });
-    progressCircle({ targetPercent: 75, size: 50, containerId: 'circle-pdt3' });
+    // progressCircle({ targetPercent: 85, size: 50, containerId: 'circle-pdt2' });
+    // progressCircle({ targetPercent: 75, size: 50, containerId: 'circle-pdt3' });
 
-    // updateProduct(arr1, "pdt1")
-    // updateProduct(arr2, "pdt2")
-    // updateProduct(arr3, "pdt3")
+    updateProduct(arr1, "pdt1");
+    updateProduct(arr2, "pdt2");
+    updateProduct(arr3, "pdt3");
 
-    updateProduct(["/assets/icon128.png", "https://www.komodo.co.uk/collections/mens-knitwear/products/anton-organic-cotton-sweat-sand-melange"], "pdt1")
+    // updateProduct(["/assets/icon128.png", "https://www.komodo.co.uk/collections/mens-knitwear/products/anton-organic-cotton-sweat-sand-melange"], "pdt1")
 });
 
 
