@@ -1,11 +1,11 @@
 {
     "manifest_version": 3,
-    "name": "GaruPar",
+    "name": "GreenLens",
     "version": "1.0",
     "icons": {
-        "16": "/assets/icon16.png",
-        "48": "/assets/icon48.png",
-        "128": "/assets/icon128.png"
+        "16": "/assets/binoculars16.png",
+        "48": "/assets/binoculars48.png",
+        "128": "/assets/binoculars128.png"
     },
     "permissions": [
         "tabs",
@@ -28,9 +28,9 @@
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
-            "16": "/assets/icon16.png",
-            "48": "/assets/icon48.png",
-            "128": "/assets/icon128.png"
+            "16": "/assets/binoculars16.png",
+            "48": "/assets/binoculars48.png",
+            "128": "/assets/binoculars128.png"
         }
     }
 }
