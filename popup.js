@@ -10,32 +10,8 @@ const firebaseConfig = {
   measurementId: "G-HW9N3WV8R5"
 };
 
-const app = initializeApp(firebaseConfig);
-const db = getDatabase(app);
-
-// Retrieve current tab's URL 
-chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
-  const url = tabs[0].url;
-  // Extract the domain or company name from the URL, e.g., "komodo"
-  console.log("Current tab URL:", url);
-});
-
-// Process the URL to extract company name
-function extractCompanyName(url) {
-  try {
-    const domain = (new URL(url)).hostname.replace(/^www\./, '');
-    // Example: "komodo.uk.com" -> "komodo"
-    const company = domain.split('.')[0];
-    return company;
-  } catch (e) {
-    return null;
-  }
-}
-
-// Usage:
-const companyName = extractCompanyName(url); 
-console.log("Company name:", companyName);
-
+const app = firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
 
 
 // On-start
@@ -46,3 +22,18 @@ document.addEventListener('DOMContentLoaded', function() {
   progressCircle({ targetPercent: 75, size: 50, containerId: 'circle-pdt3' });
 
 });
+
+chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {
+  const url = tabs[0].url;
+  console.log("Current tab URL:", url);
+
+  // Now you can safely use url here:
+  const companyName = getCompanyName(url); 
+  console.log("Company name:", companyName);
+  getScore(companyName, function(score) {
+    console.log("score: ", score);
+  });
+
+});
+
+
