@@ -166,11 +166,6 @@ textarea.textbox {
   font-family: inherit;
 }
 
-
-.question {
-
-}
-
 .star-rating {
   display: flex;
   flex-direction: row;
