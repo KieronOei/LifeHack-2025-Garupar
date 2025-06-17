@@ -1,0 +1,17 @@
+{
+  "dependencies": {
+    "firebase": "^11.9.1",
+    "webpack": "^5.99.9",
+    "webpack-cli": "^6.0.1"
+  },
+  "name": "lifehack-2025-garupar",
+  "version": "1.0.0",
+  "description": "Team Members: GuanYou, Lucas &amp; Kieron",
+  "main": "popup.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
