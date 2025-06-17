@@ -1,4 +1,25 @@
 # LifeHack-2025-Garupar
-Team Members: GuanYou, Lucas &amp; Kieron
+Team Members: Chen Guanyou, Ng Jin Wei Lucas &amp; Kieron Benedict Oei Jun Jie
 
+# Set up instructions
+1. Clone this repo
+2. Go to google chrome
+3. Click on the extensions icon at the top right hand corner (Looks like a puzzle)
+4. Click 'Manage Extensions'
+5. At the top right hand corner, turn on 'Developer Mode'
+6. At the top left hand corner, click 'Load unpacked'
+7. Select the folder of the github repo which should be named 'LifeHack-2025-Garupar'
 
+Set up complete! 
+
+# How to use
+1. Go to one of these select websites (adidas, asos, bershka, fatface, fila, finisterre, gap, karee, komodo, ladage bonton, monsoon accessorize, nike, patagonia, people tree, pull&bear, seasalt, thenorthface, zara), it won't work with other websites due to limited information on our database.
+2. Find any shirt on the website and click into the product page.
+3. Right click on the image and click on 'Reverse Image Search (AI)'. It works best for images of the shirt on its own. Click [here](https://www.zara.com/sg/en/basic-polo-shirt-p01887700.html) for an example
+4. Click on the 'Green Lens' extension to open it and let it load
+5. From the extension pop up window, you can interact with the other suggested products by clicking on the image to be redirected to the product page
+6. You may also write a review which is written into our database
+
+# To note
+1. We are running the server which is hosting the 'Reverse Image Search (AI)' capability locally on our laptop. Trying to use this after LifeHack 2025 is over will result in the loss of the reverse image search functionality unless the server is turned on locally from a laptop
+2. The firebase API key is shown in this repo for demo purposes
