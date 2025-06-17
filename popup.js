@@ -10,6 +10,9 @@ const firebaseConfig = {
   measurementId: "G-HW9N3WV8R5"
 };
 
+const app = firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
+
 function updatePopupWithResults() {
   chrome.storage.local.get('reverseImageResults', function(data) {
     const results = data.reverseImageResults || [];
