@@ -14,6 +14,34 @@ document.addEventListener('DOMContentLoaded', function() {
 
       // For review form submission
 
+      // Checking form for validity
+      function checkFormValidity() {
+        const name = document.getElementById('reviewerName').value.trim();
+        const brand = document.getElementById('reviewBrand').value.trim();
+        const comment = document.getElementById('reviewComment').value.trim();
+        const productRating = window.ratingValues ? window.ratingValues['starRatingProduct'] : 0;
+        const sustainabilityRating = window.ratingValues ? window.ratingValues['starRatingSustainability'] : 0;
+        const submitBtn = document.getElementById('submitReviewBtn');
+
+        if (name && brand && comment && productRating > 0 && sustainabilityRating > 0) {
+            submitBtn.disabled = false;
+        } else {
+            submitBtn.disabled = true;
+        }
+      }
+
+      // Listen for input changes
+      ['reviewerName', 'reviewBrand', 'reviewComment'].forEach(id => {
+          document.getElementById(id).addEventListener('input', checkFormValidity);
+      });
+
+      // Listen for star rating changes
+      document.querySelectorAll('.star-rating .star').forEach(star => {
+          star.addEventListener('click', checkFormValidity);
+      });
+
+
+      // When submit button is pressed
       document.getElementById('reviewForm').addEventListener('submit', function(event) {
       event.preventDefault();
 
