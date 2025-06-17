@@ -25,7 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
       
       //update main score
       getInfo(url).then(arr => {
-        console.log("array: ", arr); 
         progressCircle({ targetPercent: arr[1], size: 80, containerId: 'circle-main' });
         document.getElementById('currentLearnMore').href = arr[2];
       });
