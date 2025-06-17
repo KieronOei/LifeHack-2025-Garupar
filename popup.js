@@ -41,12 +41,11 @@ document.addEventListener('DOMContentLoaded', function() {
     
     
     //circles
-    progressCircle({ targetPercent: 95, size: 50, containerId: 'circle-pdt1' });
     progressCircle({ targetPercent: 85, size: 50, containerId: 'circle-pdt2' });
     progressCircle({ targetPercent: 75, size: 50, containerId: 'circle-pdt3' });
 
     
-
+    updateProduct(["/assets/icon128.png", "https://www.komodo.co.uk/collections/mens-knitwear/products/anton-organic-cotton-sweat-sand-melange"], "pdt1")
 });
 
 
