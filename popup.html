@@ -87,34 +87,33 @@
         </div>
 
         <div id="tab-bottom">
-            <input type="text" class="textbox" placeholder="Your Name">
-            <input type="text" class="textbox" placeholder="Brand">
-            <textarea class="textbox" placeholder="Your Review!" style="height: 200px; vertical-align: top;"></textarea>
- 
-            <div style="display: block;">
-                <div class="question">Product</div>
-                <div class="star-rating" id="starRating">
-                    <span class="star" data-value="1">&#9733;</span>
-                    <span class="star" data-value="2">&#9733;</span>
-                    <span class="star" data-value="3">&#9733;</span>
-                    <span class="star" data-value="4">&#9733;</span>
-                    <span class="star" data-value="5">&#9733;</span>
-                </div>
-                
-                <div class="question">Sustainability</div>
-                <div class="star-rating" id="starRating2">
-                    <span class="star" data-value="1">&#9733;</span>
-                    <span class="star" data-value="2">&#9733;</span>
-                    <span class="star" data-value="3">&#9733;</span>
-                    <span class="star" data-value="4">&#9733;</span>
-                    <span class="star" data-value="5">&#9733;</span>
-                </div>
+            <form id="reviewForm">
+                <input type="text" id="reviewerName" class="textbox" placeholder="Your Name">
+                <input type="text" id="reviewBrand" class="textbox" placeholder="Brand">
+                <textarea id="reviewComment" class="textbox" placeholder="Your Review!" style="height: 200px;"></textarea>
 
-                <button class="button" style="border: none;">Submit</button>
-            </div>
-            
-            
-            
+                <div style="display: block;">
+                    <div class="question">Product</div>
+                    <div class="star-rating" id="starRatingProduct">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+
+                    <div class="question">Sustainability</div>
+                    <div class="star-rating" id="starRatingSustainability">
+                        <span class="star" data-value="1">&#9733;</span>
+                        <span class="star" data-value="2">&#9733;</span>
+                        <span class="star" data-value="3">&#9733;</span>
+                        <span class="star" data-value="4">&#9733;</span>
+                        <span class="star" data-value="5">&#9733;</span>
+                    </div>
+                    <button type="submit" class="button" style="border: none;">Submit</button>
+                </div>
+            </form>
+            <div id="reviewMessage"></div>
 
         </div>
     </div>

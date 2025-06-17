@@ -16,6 +16,7 @@ const db = firebase.database();
 
 // On-start
 let url;
+let companyName;
 document.addEventListener('DOMContentLoaded', function() {
     
     chrome.tabs.query({ active: true, currentWindow: true }, function(tabs) {

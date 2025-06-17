@@ -1,3 +1,6 @@
+// Initialise global variable
+window.ratingValues = {}; 
+
 document.addEventListener('DOMContentLoaded', function() {
   // Select all star rating containers
   const ratingContainers = document.querySelectorAll('.star-rating');
@@ -19,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
         selectedRating = parseInt(this.getAttribute('data-value'));
         if (ratingValue) ratingValue.textContent = `Rating: ${selectedRating}`;
         highlightStars(selectedRating, stars);
+        window.ratingValues[container.id] = selectedRating;
       });
     });
 
