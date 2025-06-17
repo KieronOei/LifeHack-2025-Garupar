@@ -31,7 +31,6 @@ chrome.contextMenus.onClicked.addListener(async (info, tab) => {
         throw new Error(errorData.detail || "Unknown error");
       }
 
-
     } catch (err) {
       console.log('Error:', err);
       chrome.notifications.create({

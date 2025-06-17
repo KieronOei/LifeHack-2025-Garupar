@@ -6,6 +6,28 @@ document.addEventListener('DOMContentLoaded', function() {
     const goReviewsBtn = document.getElementById('home');
     const thankyouBtn = document.getElementById('thankyou');
 
+    goReviewsBtn.addEventListener('click', function() {
+      feedbackView.style.display = 'none';
+      reviewsView.style.display = 'flex';
+      document.getElementById('reviewForm').reset();
+      resetStarRatings();
+
+      // Remove active-tab from feedback & add active-tab to home
+      document.getElementById('feedback').classList.remove('active-tab');
+      document.getElementById('home').classList.add('active-tab');
+    });
+
+    thankyouBtn.addEventListener('click', function() {
+      feedbackView.style.display = 'flex';
+      thankyouView.style.display = 'none';
+      document.getElementById('reviewForm').reset();
+      resetStarRatings();
+
+      // Remove active-tab from home & add active-tab to feedback
+      document.getElementById('home').classList.remove('active-tab');
+      document.getElementById('feedback').classList.add('active-tab');
+    });
+ 
     goFeedbackBtn.addEventListener('click', function() {
       reviewsView.style.display = 'none';
       feedbackView.style.display = 'flex';
@@ -74,30 +96,5 @@ document.addEventListener('DOMContentLoaded', function() {
           document.getElementById('reviewMessage').textContent = "Error: " + error.message;
           });
       });
-
     });
-
-    goReviewsBtn.addEventListener('click', function() {
-      feedbackView.style.display = 'none';
-      reviewsView.style.display = 'flex';
-      document.getElementById('reviewForm').reset();
-      resetStarRatings();
-
-      // Remove active-tab from feedback & add active-tab to home
-      document.getElementById('feedback').classList.remove('active-tab');
-      document.getElementById('home').classList.add('active-tab');
-    });
-
-    thankyouBtn.addEventListener('click', function() {
-      feedbackView.style.display = 'flex';
-      thankyouView.style.display = 'none';
-      document.getElementById('reviewForm').reset();
-      resetStarRatings();
-
-      // Remove active-tab from home & add active-tab to feedback
-      document.getElementById('home').classList.remove('active-tab');
-      document.getElementById('feedback').classList.add('active-tab');
-    });
-
-    
 });

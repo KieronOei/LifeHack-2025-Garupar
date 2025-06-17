@@ -13,6 +13,7 @@ const firebaseConfig = {
 const app = firebase.initializeApp(firebaseConfig);
 const db = firebase.database();
 
+//getting the 3 results
 let arr1, arr2, arr3;
 function updatePopupWithResults() {
   chrome.storage.local.get('reverseImageResults', function(data) {
