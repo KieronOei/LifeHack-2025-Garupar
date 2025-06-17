@@ -88,12 +88,12 @@
 
         <div class="tab-bottom">
             <form id="reviewForm">
-                <input type="text" id="reviewerName" class="textbox" placeholder="Your Name">
-                <input type="text" id="reviewBrand" class="textbox" placeholder="Brand">
-                <textarea id="reviewComment" class="textbox" placeholder="Your Review!" style="height: 200px;"></textarea>
+                <input type="text" id="reviewerName" class="textbox" placeholder="Your Name" required>
+                <input type="text" id="reviewBrand" class="textbox" placeholder="Brand" required>
+                <textarea id="reviewComment" class="textbox" placeholder="Your Review!" style="height: 200px;" required></textarea>
 
                 <div style="display: block;">
-                    <div class="question">Product</div>
+                    <div class="question">Products</div>
                     <div class="star-rating" id="starRatingProduct">
                         <span class="star" data-value="1">&#9733;</span>
                         <span class="star" data-value="2">&#9733;</span>
@@ -110,7 +110,7 @@
                         <span class="star" data-value="4">&#9733;</span>
                         <span class="star" data-value="5">&#9733;</span>
                     </div>
-                    <button type="submit" class="button" style="border: none; margin-top: 5px;">Submit</button>
+                    <button id = "submitReviewBtn" type="submit" class="button" style="border: none; margin-top: 5px;" disabled>Submit</button>
                 </div>
             </form>
             <div id="reviewMessage"></div>
