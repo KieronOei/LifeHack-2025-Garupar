@@ -3,6 +3,7 @@
 <head>
     <title>GaruPar</title>
     <link rel="stylesheet" href="popup.css">
+    <script src="functions/resetStarRating.js"></script>
     <script src="functions/updateProduct.js"></script>
     <script src="functions/getInfo.js"></script>
     <script src="functions/starAnimation.js"></script> 
@@ -81,11 +82,11 @@
     </div>
     
     <div id="main2" style="display: none;">
-        <div id="tab-top">
+        <div class="tab-top">
             Write a review for us!
         </div>
 
-        <div id="tab-bottom">
+        <div class="tab-bottom">
             <form id="reviewForm">
                 <input type="text" id="reviewerName" class="textbox" placeholder="Your Name">
                 <input type="text" id="reviewBrand" class="textbox" placeholder="Brand">
@@ -117,6 +118,16 @@
         </div>
     </div>
 
+    <div id="main3" style="display: none;">
+        <div class="tab-top">Write a review for us!</div>
+        <div class="tab-bottom">
+            <div class="header">Thank you for your</div>
+            <div class="header">review!</div>
+
+            <button id='thankyou' class="relink">Want to write another one?</button>
+        </div>
+        
+    </div>
     <div id="tabs">
         <div class="tab-container">
             <button id="home" class="tab active-tab">

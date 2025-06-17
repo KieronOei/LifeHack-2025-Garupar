@@ -1,8 +1,10 @@
 document.addEventListener('DOMContentLoaded', function() {
     const reviewsView = document.getElementById('main');
     const feedbackView = document.getElementById('main2');
+    const thankyouView = document.getElementById('main3');
     const goFeedbackBtn = document.getElementById('feedback');
     const goReviewsBtn = document.getElementById('home');
+    const thankyouBtn = document.getElementById('thankyou');
 
     goFeedbackBtn.addEventListener('click', function() {
       reviewsView.style.display = 'none';
@@ -26,7 +28,7 @@ document.addEventListener('DOMContentLoaded', function() {
       const productRating = window.ratingValues ? window.ratingValues['starRatingProduct'] : 0;
       const sustainabilityRating = window.ratingValues ? window.ratingValues['starRatingSustainability'] : 0;
       // Note: If your sustainability container is named 'starRatingSustainability', use that
-
+ 
       // Push review to Firebase
       const reviewsRef = firebase.database().ref('reviews');
       reviewsRef.push({
@@ -37,7 +39,9 @@ document.addEventListener('DOMContentLoaded', function() {
         sustainabilityRating: sustainabilityRating,
         timestamp: firebase.database.ServerValue.TIMESTAMP
         }).then(() => {
-          document.getElementById('reviewMessage').textContent = "Review submitted!";
+          // document.getElementById('reviewMessage').textContent = "Review submitted!";
+          feedbackView.style.display = 'none';
+          thankyouView.style.display = 'flex';
         }).catch(error => {
           document.getElementById('reviewMessage').textContent = "Error: " + error.message;
           });
@@ -48,10 +52,23 @@ document.addEventListener('DOMContentLoaded', function() {
     goReviewsBtn.addEventListener('click', function() {
       feedbackView.style.display = 'none';
       reviewsView.style.display = 'flex';
+      document.getElementById('reviewForm').reset();
+      resetStarRatings();
 
       // Remove active-tab from feedback & add active-tab to home
       document.getElementById('feedback').classList.remove('active-tab');
       document.getElementById('home').classList.add('active-tab');
+    });
+
+    thankyouBtn.addEventListener('click', function() {
+      feedbackView.style.display = 'flex';
+      thankyouView.style.display = 'none';
+      document.getElementById('reviewForm').reset();
+      resetStarRatings();
+
+      // Remove active-tab from home & add active-tab to feedback
+      document.getElementById('home').classList.remove('active-tab');
+      document.getElementById('feedback').classList.add('active-tab');
     });
 
     
