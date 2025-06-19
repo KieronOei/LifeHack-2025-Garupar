@@ -1,6 +1,9 @@
 # LifeHack-2025-Garupar
 Team Members: Chen Guanyou, Ng Jin Wei Lucas &amp; Kieron Benedict Oei Jun Jie
 
+# Demo
+View our video demo [here](https://www.youtube.com/watch?v=6R4LRhFUV4o)! 
+
 # Set up instructions
 1. Clone this repo
 2. Go to google chrome
